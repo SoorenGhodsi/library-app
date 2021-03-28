@@ -73,7 +73,7 @@ print(book1.matches("James and "))
 '''
 
 
-'''
+
 #Sorts
 def titleSort(books):
     newList = sorted(books, key=lambda book: (book.title, book.author, book.genre))
@@ -87,7 +87,7 @@ def genreSort(books):
     newList = sorted(books, key=lambda book: (book.genre, book.title, book.author))
     return newList
 
-
+'''
 book1 = Book("James and the Giant Peach", "Roald Dahl", "Childrens")
 book2 = Book("Harry Potter 1", "J.K Rowling", "YA")
 book3 = Book("Harry Potter 2", "J.K Rowling", "YA")
