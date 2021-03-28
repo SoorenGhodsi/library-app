@@ -55,7 +55,11 @@ class Book(object):
 
     def unLend(self):
         self.__lentTo = "*"
-
+    
+#checks if the string that is searched is in the title
+    def matches(self, searchString):
+        search = searchString.lower()
+        return search in self.title.lower()
 
 '''
 book1 = Book("James and the Giant Peach", "Roald Dahl", "Childrens")
@@ -65,8 +69,11 @@ print(book1)
 book1.genre = "YA"
 book1.lentTo = "Jeremy"
 print(book1)
+print(book1.matches("James and "))
 '''
 
+
+'''
 #Sorts
 def titleSort(books):
     newList = sorted(books, key=lambda book: (book.title, book.author, book.genre))
@@ -80,7 +87,7 @@ def genreSort(books):
     newList = sorted(books, key=lambda book: (book.genre, book.title, book.author))
     return newList
 
-'''
+
 book1 = Book("James and the Giant Peach", "Roald Dahl", "Childrens")
 book2 = Book("Harry Potter 1", "J.K Rowling", "YA")
 book3 = Book("Harry Potter 2", "J.K Rowling", "YA")
@@ -107,6 +114,10 @@ bookGenres = genreSort(books)
 for book in bookGenres:
     print(book)
 '''
+
+
+    
+
 
 
  
