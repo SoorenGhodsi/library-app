@@ -23,5 +23,11 @@ def login():
 
 masterlist = []
 
+@app.route("/library", methods=["POST", "GET"])
+def add():
+	if request.method == "POST":
+		book = Book(request.form['title'], request.form['author'], request.form['genre'])
+	return render_template('library.html')
+
 if __name__ == "__main__":
 	app.run(debug=True)

@@ -1,6 +1,5 @@
 from datetime import date, datetime
 
-
 class Book(object):
     def __init__(self, title, author, genre):
         today = date.today()
