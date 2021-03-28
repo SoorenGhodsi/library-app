@@ -58,8 +58,8 @@ class Book(object):
     
 #checks if the string that is searched is in the title
     def matches(self, searchString):
-        search = searchString.lower()
-        return search in self.title.lower()
+        search = searchString.lower().trim()
+        return search in self.title.lower().trim()
 
 '''
 book1 = Book("James and the Giant Peach", "Roald Dahl", "Childrens")
