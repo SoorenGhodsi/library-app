@@ -80,11 +80,33 @@ def genreSort(books):
     newList = sorted(books, key=lambda book: (book.genre, book.title, book.author))
     return newList
 
+'''
+book1 = Book("James and the Giant Peach", "Roald Dahl", "Childrens")
+book2 = Book("Harry Potter 1", "J.K Rowling", "YA")
+book3 = Book("Harry Potter 2", "J.K Rowling", "YA")
+book4 = Book("Harry Potter 3", "J.K Rowling", "YA")
+book5 = Book("Divergent", "Veronica Roth", "Adult")
 
+books = [book1, book2, book3, book4, book5]
 
+for book in books:
+    print(book)
+    
+bookTitles = titleSort(books)
 
+for book in bookTitles:
+    print(book)
+    
+bookAuthors = authorSort(books)
 
+for book in bookAuthors:
+    print(book)
 
+bookGenres = genreSort(books)
+
+for book in bookGenres:
+    print(book)
+'''
 
 
  
